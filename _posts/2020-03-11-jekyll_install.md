@@ -152,8 +152,8 @@ gem install jekyll-seo-tag
 gem install jekyll-admin
 ```
 
-인터넷 창 열고 127.0.0.1:4000 
-또는 http://ai-robotics-kr.github.io/ 에서 확인 가능합니다. 
+인터넷 창 열고 127.0.0.1:4000 를 클릭하면 해당 블로그를 볼수 있습니다. 
+
 
 ![]({{ site.url }}/images/window-install/13.png)
 
@@ -170,6 +170,7 @@ git commit -m "커밋메세지"
 git push origin master
 ```
 
+이제는 http://ai-robotics-kr.github.io/ 에서 확인 가능합니다. 
 
 
 
