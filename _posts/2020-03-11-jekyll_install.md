@@ -53,7 +53,7 @@ gem --version
 
 을 입력하여 gem 설치가 되어 있는지 확인해 줍니다.
 
-![]({{ site.url }}/images/window-install/3.png)
+![]({{ site.url }}/images/mac-install/3.png)
 
 ## jekyll 설치하기
 
@@ -76,7 +76,7 @@ sudo gem install bundler jekyll
 jekyll -v
 ```
 
-![]({{ site.url }}/images/window-install/4.png)
+![]({{ site.url }}/images/mac-install/4.png)
 
 ## git 설치하기
 
@@ -91,7 +91,7 @@ brew install -s git
 git --version
 ```
 
-![]({{ site.url }}/images/window-install/5.png)
+![]({{ site.url }}/images/mac-install/5.png)
 
 ## 템플릿 가져오기
 
@@ -125,14 +125,14 @@ bundle install
 
 ** bundle install 에서 아래과 같은 에러가 난다면
 
-![]({{ site.url }}/images/window-install/6.png)
+![]({{ site.url }}/images/mac-install/6.png)
 
 해당 명령어로 업데이트 해준 후 다시 시도합니다.
 
 ```
 bundle update --bundler
 ```
-![]({{ site.url }}/images/window-install/7.png)
+![]({{ site.url }}/images/mac-install/7.png)
 
 
 이제 다 되었습니다! 블로그를 서빙해줍니다!
@@ -141,7 +141,7 @@ bundle update --bundler
 bundle exec jekyll serve
 ```
 
-![]({{ site.url }}/images/window-install/8.png)
+![]({{ site.url }}/images/mac-install/8.png)
 
 
 만약 에러가 난다면 아래 패키지들을 설치해 주세요.
