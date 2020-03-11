@@ -17,7 +17,7 @@ share: true
 
 ## RUBY 설치하기
 
-ruby 를 설치하기 위해 패키지 관리자 brew 를 다운받는다. 
+ruby 를 설치하기 위해 패키지 관리자 brew 를 다운받습니다. 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -31,7 +31,7 @@ ruby 를 설치하기 위해 패키지 관리자 brew 를 다운받는다.
 ```
 brew install ruby
 ```
-homebrew 루비의 경로를 쉘 환경 설정에 추가한다. 
+homebrew 루비의 경로를 쉘 환경 설정에 추가합니다.
 ```
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
 ```
