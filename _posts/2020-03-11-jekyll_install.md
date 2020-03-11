@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "윈도우에서 jekyll 설치하기"
+title: "Mac에서 jekyll 설치하기"
 description: "Mac OS에서 Ruby, jekyll, git 설치하기"
 author: stella
 date: 2020-03-11
