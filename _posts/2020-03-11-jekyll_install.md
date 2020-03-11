@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "윈도우에서 jekyll 설치하기"
-description: "윈도우 10에서 Ruby, jekyll, git 설치하기"
-author: bill
-date: 2020-03-08
+description: "Mac OS에서 Ruby, jekyll, git 설치하기"
+author: stella
+date: 2020-03-11
 tags: [presentation, NAVER, TechTalk]
 comments: true
 subdir: presentation
@@ -127,7 +127,7 @@ bundle install
 
 ![]({{ site.url }}/images/window-install/6.png)
 
-해당 명령어로 업데이트 해준 후 다시 시도한다. 
+해당 명령어로 업데이트 해준 후 다시 시도합니다.
 
 ```
 bundle update --bundler
@@ -135,12 +135,13 @@ bundle update --bundler
 ![]({{ site.url }}/images/window-install/7.png)
 
 
-이제 다 되었다! 블로그를 서빙해준다!
+이제 다 되었습니다! 블로그를 서빙해줍니다!
 
 ```
-jekyll serve
+bundle exec jekyll serve
 ```
 
+![]({{ site.url }}/images/window-install/8.png)
 
 
 만약 에러가 난다면 아래 패키지들을 설치해 주세요.
