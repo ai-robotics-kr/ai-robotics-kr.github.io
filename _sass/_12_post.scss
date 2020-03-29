@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*
+포스트와 관련된 css 목록
+*/
+
+.post-content {
+    padding: 3em;
+}
+
+.highlighter-rouge {
+    padding: 5px ;
+    margin-top: 5px ;
+    margin-bottom: 5px ;
+    .highlight {
+        background: #0F0F0F ;
+    }
+}
+
+code {
+    color: #998 ;
+    background-color: transparent ;
+    border-color: #0F0F0F ;
+}
+

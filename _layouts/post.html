@@ -1,0 +1,32 @@
+---
+layout: post
+---
+
+<!doctype html>
+<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+
+<head>
+    {% include _head.html %}
+    <!--<link rel="stylesheet" type="text/css" href="{{ url }}/asstes/css/post.css">-->
+</head>
+
+<body>
+
+    {% unless page.skip_boilerplate %}
+    {% include _navigation.html %}
+    {% endunless %}
+
+    {% include _masthead.html %}
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    {% unless page.skip_boilerplate %}
+    {% include _footer.html %}
+    {% endunless %}
+
+    {% include _footer_scripts.html %}
+</body>
+
+</html>

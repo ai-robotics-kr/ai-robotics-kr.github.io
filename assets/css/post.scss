@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+.post-content {
+    padding-left: 3em ;
+    padding-bottom: 3em !important;
+    p {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 32px;
+      @include media-query($on-laptop) {
+        font-size: 28px;
+      }
+    }
+    h3 {
+      font-size: 26px;
+      @include media-query($on-laptop) {
+        font-size: 22px;
+      }
+    }
+    h4 {
+      font-size: 20px;
+      @include media-query($on-laptop) {
+        font-size: 18px;
+      }
+    }
+  }
