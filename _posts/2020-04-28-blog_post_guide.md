@@ -1,84 +1,63 @@
 ---
 layout: post
-title: "Mac에서 jekyll 설치하기"
-description: "Mac OS에서 Ruby, jekyll, git 설치하기"
+title: "Github Blog Post 작성하기"
+description: "Github Blog Post 작성하기"
 author: stella
-date: 2020-03-11
-tags: [presentation, NAVER, TechTalk]
+date: 2020-04-28
+tags: [presentation, airoboticskr, TechTalk]
 comments: true
 subdir: presentation
 thumbnail: mot_logo.jpg
 share: true
 ---
 
-# mac os jekyll 설치방법
+# Blog Post 작성하는 법
+
+ai robotics kr 의 블로그에 글을 포스팅 하는 법을 소개합니다.
+
+
+## jekyll 을 os 에 맞게 설치하기
+
+먼저, 앞에 글들인 
+
+1. window 에서 jekyll 설치하기
+2. mac 에서 jekyll 설치하기
+
+를 참고해서 jekyll 을 os에 알맞게 설치해줍니다. 
+
+## 포스트 작성 환경 설치 (IDE, Markdown)
+
+git clone 한 코드를 editor 로 열어줍니다. 
+
+저는 주로 pycharm 을 사용합니다.
+저희 Github blog 는 markdown 을 이용하여 작성합니다.
+markdown 문법으로 작성하며 preview 하면서 작성하면 좋기 때문에
+저는 pycharm 에서 지원하는 markdown plugin 을 사용합니다.
+이외에 여러 markdown IDE 가 존재하니, 원하시는 에디터를 사용하셔서
+포스트를 작성하시면 되겠습니다.
+
+Markdown 문법에 관련된 내용은 아래 사이트를 참조하시면 됩니다.
+
+[Ref] https://gist.github.com/ihoneymon/652be052a0727ad59601
 
 
 
-## RUBY 설치하기
+## 포스트 작성하기
 
-ruby 를 설치하기 위해 패키지 관리자 brew 를 다운받습니다. 
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-(설치 중간에 비밀번호를 치라고 나옵니다.)
-
-![]({{ site.url }}/images/mac-install/1.png)
-
-설치가 잘 되면 위와 같은 문구가 나옵니다.
-
-이제 설치된 brew 를 이용해 ruby 를 설치해 줍니다. 
-```
-brew install ruby
-```
-homebrew 루비의 경로를 쉘 환경 설정에 추가합니다.
-```
-echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
-```
-
-터미널을 다시 껐다가 켜줍니다. 
-
-
-```
-ruby -v
-```
-이 명령어를 쳤을때, 버전 확인이 가능하면 됩니다. ruby 2.6.5-1 이상 버전이면 됩니다. 
-
-![]({{ site.url }}/images/mac-install/2.png)
-
-
-```
-gem --version
-```
-
-을 입력하여 gem 설치가 되어 있는지 확인해 줍니다.
-
-![]({{ site.url }}/images/mac-install/3.png)
-
-## jekyll 설치하기
-
-설치가 잘 되어있다면 jekyll을 설치해 줍니다.
-
-1) mojave (10.14) version
+ㅍ
 
 ```
-sudo gem install bundler
-sudo gem install -n /usr/local/bin/ jekyll
-```
-2) mojave 이전 버전 (<10.14)
-```
-sudo gem install bundler jekyll
+git status
+
+git add 파일명
+git add .
+
+git commit -m "커밋메세지"
+
+git push origin master
 ```
 
-설치가 완료되면 아래 명령어를 입력하여 설치를 확인해 줍니다.
-
-```
-jekyll -v
-```
-
-![]({{ site.url }}/images/mac-install/4.png)
-
-## git 설치하기
+이제는 http://ai-robotics-kr.github.io/ 에서 확인 가능합니다. 
 
 git 이 없다면, 패키지 관리자 brew 를 이용해서 git 을 설치합니다. 
 ```
@@ -91,7 +70,7 @@ brew install -s git
 git --version
 ```
 
-![]({{ site.url }}/images/mac-install/5.png)
+![]({{ site.url }}/images/mac-inst₩all/5.png)
 
 ## 템플릿 가져오기
 
@@ -157,7 +136,20 @@ gem install jekyll-admin
 
 ![]({{ site.url }}/images/window-install/13.png)
 
+확인 후 글을 배포하기 위해 아래 git 명령어를 입력해 주세요.
 
+```
+git status
+
+git add 파일명
+git add .
+
+git commit -m "커밋메세지"
+
+git push origin master
+```
+
+이제는 http://ai-robotics-kr.github.io/ 에서 확인 가능합니다. 
 
 
 
