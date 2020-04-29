@@ -103,10 +103,16 @@ clone 명령을 사용하기 전 폴더를 다시한번 확인해 주세요.
 
 현재 폴더 내에 새로운 폴더가 생성됩니다.
 
-```
-git clone https://github.com/ai-robotics-kr/ai-robotics-kr.github.io.git
-```
+관리자가 아닌경우 먼저 
 
+https://github.com/ai-robotics-kr/ai-robotics-kr.github.io
+
+의 repository 를 fork 한후 clone 하여 자신의 로컬 저장소에 저장해줍니다. 
+```
+git clone https://github.com/아이디/ai-robotics-kr.github.io.git
+```
+ 
+ 
 새로 생성된 폴더로 이동하여 아래 명령어로 필요한 패키지를 설치해 줍니다.
 
 ```
@@ -135,18 +141,7 @@ gem install jekyll-admin
 
 ![]({{ site.url }}/images/window-install/13.png)
 
-확인 후 글을 배포하기 위해 아래 git 명령어를 입력해 주세요.
 
-```
-git status
-
-git add 파일명
-git add .
-
-git commit -m "커밋메세지"
-
-git push origin master
-```
 
 
 

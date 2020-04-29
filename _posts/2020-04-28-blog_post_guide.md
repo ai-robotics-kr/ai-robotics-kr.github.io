@@ -36,120 +36,77 @@ markdown 문법으로 작성하며 preview 하면서 작성하면 좋기 때문�
 이외에 여러 markdown IDE 가 존재하니, 원하시는 에디터를 사용하셔서
 포스트를 작성하시면 되겠습니다.
 
+![]({{ site.url }}/images/user-install/9.png)
+
+## 포스트 작성하기
+
+포스트를 쓰기 위해서는 _post 폴더 내에 design 에 아래와 같은 이름의 md 파일을 작성한다. 
+
+```
+YYYY-MM-DD-제목(underbar 띄어쓰기).md
+예 : 2020-03-09-jekyll_install_window.md
+```
+이제 해당 .md 파일에 포스트를 작성할 수 있습니다.
+
+제일 윗부분에 포스트에 관련된 정보를 반드시 기입하고 시작합니다.
+
+```
+
+---
+layout: post
+title: "포스트 제목"
+description: "포스트에 대한 한줄 설명"
+author: 저자이름
+date: YYYY-MM-DD
+tags: [달고싶은태그1, 달고싶은태그2, 달고싶은태그3]
+comments: true
+subdir: presentation
+thumbnail: mot_logo.jpg
+share: true
+---
+
+```
+
+그 다음은 원하는 포스트 내용을 마음 껏 작성 하시면 됩니다.
+
+작성 문법은 위에서 언급드린 markdown 문법을 사용합니다.
+
+
 Markdown 문법에 관련된 내용은 아래 사이트를 참조하시면 됩니다.
 
 [Ref] https://gist.github.com/ihoneymon/652be052a0727ad59601
 
 
+이미지를 삽입하고 싶으실 경우, 
 
-## 포스트 작성하기
+images 폴더 내부 user install 폴더에 번호 순서에 맞게 이름을 바꾸어
 
-ㅍ
+png 파일을 추가해주신 후 아래와 같은 문법을 사용하여 이미지를 중간에
 
-```
-git status
-
-git add 파일명
-git add .
-
-git commit -m "커밋메세지"
-
-git push origin master
-```
-
-이제는 http://ai-robotics-kr.github.io/ 에서 확인 가능합니다. 
-
-git 이 없다면, 패키지 관리자 brew 를 이용해서 git 을 설치합니다. 
-```
-brew install -s git
-```
-
-깃이 설치 되었는지 아래 명령어로 확인합니다. 
+첨부해주시면 됩니다.
 
 ```
-git --version
+![]({{ site.url }}/images/user-install/1.png)
 ```
 
-![]({{ site.url }}/images/mac-inst₩all/5.png)
+![]({{ site.url }}/images/user-install/10.png)
 
-## 템플릿 가져오기
+블로그에는 줄글로 설명하는 형식으로 포스팅을 작성하며,
 
-템플릿을 가져오기 전 cd 명령어를 이용해 작업할 폴더로 이동해 주세요.
+발표자료는 Slide 로, Code 는 Github Code 로 가져와서 엮는 식으로
 
-예를 들어 아래 폴더라면 경로는 **F:\python\page**가 됩니다.
+블로깅을 해 나가시면 됩니다. 모두 작성하셨으면 
 
-```
-cd F:\python\page
-```
+git commit 및 pull request 해주시면 됩니다.
 
-아래 명령어로 템플릿을 가져옵니다.
+pull request 하시는 방법은 아래의 사이를 참조해 주세요.
 
-clone 명령을 사용하기 전 폴더를 다시한번 확인해 주세요.
+[Ref] https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/
 
-현재 폴더 내에 새로운 폴더가 생성됩니다.
+[Ref] https://velog.io/@zansol/Pull-Request-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
 
-```
-git clone https://github.com/ai-robotics-kr/ai-robotics-kr.github.io.git
-```
+pull request 가 관리자에 의해서 승인되면, serving 되게 되고
 
-새로 생성된 폴더로 이동하여 아래 명령어로 필요한 패키지를 설치해 줍니다.
-
-```
-cd ai-robotics-kr.github.io   
-
-bundle install
-```
-
-현재 페이지의 상태를 배포하기 전에 확인해 줍니다.
-
-** bundle install 에서 아래과 같은 에러가 난다면
-
-![]({{ site.url }}/images/mac-install/6.png)
-
-해당 명령어로 업데이트 해준 후 다시 시도합니다.
-
-```
-bundle update --bundler
-```
-![]({{ site.url }}/images/mac-install/7.png)
-
-
-이제 다 되었습니다! 블로그를 서빙해줍니다!
-
-```
-bundle exec jekyll serve
-```
-
-![]({{ site.url }}/images/mac-install/8.png)
-
-
-만약 에러가 난다면 아래 패키지들을 설치해 주세요.
-
-```
-gem install tzinfo-data
-gem install jekyll-seo-tag
-gem install jekyll-admin
-```
-
-인터넷 창 열고 127.0.0.1:4000 를 클릭하면 해당 블로그를 볼수 있습니다. 
-
-
-![]({{ site.url }}/images/window-install/13.png)
-
-확인 후 글을 배포하기 위해 아래 git 명령어를 입력해 주세요.
-
-```
-git status
-
-git add 파일명
-git add .
-
-git commit -m "커밋메세지"
-
-git push origin master
-```
-
-이제는 http://ai-robotics-kr.github.io/ 에서 확인 가능합니다. 
-
+이제는 http://ai-robotics-kr.github.io/ 에서 포스트를 확인 가능합니다. 
 
 
