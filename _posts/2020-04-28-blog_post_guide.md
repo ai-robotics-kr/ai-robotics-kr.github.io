@@ -73,7 +73,7 @@ share: true
 
 
 Markdown 문법에 관련된 내용은 아래 사이트를 참조하시면 됩니다.
-[[Ref]https://gist.github.com/ihoneymon/652be052a0727ad59601](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+[참고자료1](https://gist.github.com/ihoneymon/652be052a0727ad59601)
  
 
 
@@ -102,12 +102,11 @@ git commit 및 pull request 해주시면 됩니다.
 pull request 하시는 방법은 아래의 사이트를 참조해 주세요.
 
 
-[[Ref]https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/](https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/)
+[참고자료1](https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/)
 
-[[Ref]https://velog.io/@zansol/Pull-Request-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0](https://velog.io/@zansol/Pull-Request-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
+[참고자료2](https://velog.io/@zansol/Pull-Request-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
  
 
- 
 pull request 가 관리자에 의해서 승인되면, serving 되게 되고
 
 이제는 http://ai-robotics-kr.github.io/ 에서 포스트를 확인 가능합니다. 
