@@ -40,7 +40,7 @@ markdown 문법으로 작성하며 preview 하면서 작성하면 좋기 때문�
 
 ## 포스트 작성하기
 
-포스트를 쓰기 위해서는 _post 폴더 내에 design 에 아래와 같은 이름의 md 파일을 작성한다. 
+포스트를 쓰기 위해서는 _post 폴더 내에 design 에 아래와 같은 이름의 md 파일을 작성합다. 
 
 ```
 YYYY-MM-DD-제목(underbar 띄어쓰기).md
@@ -73,8 +73,8 @@ share: true
 
 
 Markdown 문법에 관련된 내용은 아래 사이트를 참조하시면 됩니다.
-
-[Ref] https://gist.github.com/ihoneymon/652be052a0727ad59601
+[[Ref]https://gist.github.com/ihoneymon/652be052a0727ad59601](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+ 
 
 
 이미지를 삽입하고 싶으실 경우, 
@@ -99,12 +99,15 @@ png 파일을 추가해주신 후 아래와 같은 문법을 사용하여 이미
 
 git commit 및 pull request 해주시면 됩니다.
 
-pull request 하시는 방법은 아래의 사이를 참조해 주세요.
+pull request 하시는 방법은 아래의 사이트를 참조해 주세요.
 
-[Ref] https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/
 
-[Ref] https://velog.io/@zansol/Pull-Request-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
+[[Ref]https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/](https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/)
 
+[[Ref]https://velog.io/@zansol/Pull-Request-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0](https://velog.io/@zansol/Pull-Request-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
+ 
+
+ 
 pull request 가 관리자에 의해서 승인되면, serving 되게 되고
 
 이제는 http://ai-robotics-kr.github.io/ 에서 포스트를 확인 가능합니다. 
